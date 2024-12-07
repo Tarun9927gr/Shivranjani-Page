@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        header {
+            background-color: antiquewhite;
+            padding: 0px;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        header {
+            background-color: antiquewhite;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .n1 ul li {
+            background-color: rgb(231, 146, 36);
+            border: 2px solid rgb(231, 146, 36);
+            width: 220px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            float: left;
+            position: relative;
+            list-style: none;
+        }
+
+        .n1 ul li a {
+            text-decoration: none;
+            color: rgb(221, 214, 214);
+            font-weight: bold;
+            font-size: 1.5rem;
+            display: block;
+            list-style: none;
+        }
+
+        .n1 ul li a:hover {
+            background-color: rgb(128, 58, 0);
+        }
+
+        .form {
+            width: 700px;
+            height: 500px;
+            background: linear-gradient(to top, rgba(212, 161, 20, 0.712)50%, rgba(212, 161, 20, 0.712)50%);
+            position: absolute;
+            top: 450px;
+            left: 340px;
+            border-radius: 10px;
+            padding: 25px;
+        }
+
+        .form h2 {
+            width: 350px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ff7200;
+            font-size: 22px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-left: 150px;
+            padding: 8px;
+        }
+
+        .form input {
+            width: 580px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #080808;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            margin-left: 60px;
+        }
+        .form select{
+            width: 580px;
+            height: 35px;
+            background: transparent;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #080808;
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+            margin-left: 60px;
+
+        }
+
+        .form input:focus {
+            outline: none;
+        }
+
+        ::placeholder {
+            color: #0f0f0f;
+            font-family: Arial;
+        }
+
+        .btnn {
+            width: 400px;
+            height: 40px;
+            background: #ff7200;
+            border: 10px;
+            margin-top: 50px;
+            margin-left: 140px;
+            font-size: 18px;
+            border-radius: 100px;
+            cursor: pointer;
+            color: #fff;
+            transition: 0.4s ease;
+        }
+
+        .btnn:hover {
+            background: #fff;
+            color: #ff7200;
+        }
+
+        .btnn a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        .form .link {
+            font-family: Arial;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+            color: rgb(12, 12, 12);
+        }
+
+        .form .link a {
+            text-decoration: none;
+            color: #ff7200;
+            text-align: center;
+            padding: 500px;
+        }
+
+        .aa {
+            text-align: center;
+            padding-left: 310px;
+            color: #0f0f0f;
+        }
+
+        .menu a:hover {
+            background-color: rgb(19, 18, 18);
+        }
+
+        .footer {
+            height: 200px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+        }
+
+        .footerb {
+            height: 180px;
+            width: 300px;
+            float: left;
+            margin-top: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .footerb a {
+            text-decoration: none;
+            color: white;
+        }
+
+        @keyframes example {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1 style="font-size: 40px; color: rgb(248, 141, 2);">SHIVRANJANI</h1>
+            <p style="text-align: center; margin-top: 10px; font-size: 30px;">The Music Society of Ramanujan College</p>
+            <p>NAAC Grade A++ with CGPA 3.71</p>
+        </div>
+        <br>
+        <img style="padding-left: 50px; float: left;" src="/static/G20.png" alt="your browser does'nt support">
+        <h1 style="float: left; padding-left: 380px; color: rgb(248, 141, 2); padding-right: 350px;">शिवRanjani</h1>
+        <img style="padding-right: 30px; float: left;" src="/static/G20.png" alt="your browser does'nt support">
+
+        <div style="padding-left: 2px;" class="menu">
+            <nav class="n1">
+                <ul class="m1">
+                    <li><a href="{% url 'Home' %}">HOME</a></li>
+                    <li><a href="{% url 'login' %}">LOGIN</a></li>
+                    <li><a href="{% url 'About' %}">ABOUT</a></li>
+                    <li><a href="{% url 'Members' %}">MEMBERS</a></li>
+                    <li><a href="{% url 'Mission' %}">REGISTRATION</a></li>
+                    <li><a href="{% url 'Achievement' %}">ACHIEVEMENTS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            <h2>Register Here</h2>
+            <input type="text" name="username" placeholder="Enter Username" value="{{ un }}" id="username">
+            <input type="email" name="email" placeholder="Enter Email" value="{{ em }}" id="email">
+            <input type="tel" name="mobile" placeholder="Enter Mobile Number" value="{{ tel }}" id="mobile" pattern="[0-9]{10}" required title="Please enter a valid 10-digit mobile number">
+            <select id="genre" name="genre" value="{{ gen }}" required>
+                <option value="">Select Favourite Music Genre</option>
+                <option value="pop">Pop</option>
+                <option value="rock">Rock</option>
+                <option value="jazz">Jazz</option>
+                <option value="hip-hop">Hip-Hop</option>
+                <option value="classical">Classical</option>
+                <option value="electronic">Electronic</option>
+            </select>
+            <button class="btnn"><a href="#">Register</a></button><br>
+        </form>
+    </div>
+
+    <p style="color: antiquewhite; font-size: 600px;">hello</p>
+
+    <div class="footer">
+        <div class="footerb">
+            <b> Contact : </b> <br><br>
+            Ramanujan college, Kalkaji<br> 
+            Email : Shivranjani@gmail.com<br>
+            Mobile : 93165734540<br>
+            Time : 9.00 AM to 5.00 PM <br>
+        </div>
+        <div class="footerb">
+            <b> Directions</b>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.025089248348!2d77.25249467387387!3d28.53896558832641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d9a24e2a8f%3A0x469bcb8c1b03b6f6!2sRamanujan%20College!5e0!3m2!1sen!2sin!4v1701796327241!5m2!1sen!2sin" width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <p>Social media:
+                <a href="https://tr.ee/-3BrlPppG_"><span class="glyphicon glyphicon-envelope"></span></a>
+            </p>
+            <p>Listen this:
+                <a href="https://open.spotify.com/track/2542xAtyumIMQu677ejjoG?si=S6u2svN9TvC4Pjk-xHCjvQ">
+                    <span class="glyphicon glyphicon-music"></span>
+                </a>
+            </p>
+            <p>Track us:
+                <a href="https://maps.app.goo.gl/oBcXVAXmKehoy2D49">
+                    <span class="glyphicon glyphicon-map-marker"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

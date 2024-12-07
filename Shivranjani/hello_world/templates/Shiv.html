@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        
+            body{
+    background-color: antiquewhite;
+}
+        
+        header {
+            background-color: antiquewhite;
+        }
+
+        .head {
+            text-align: center;
+        }
+
+        img {
+            height: 100px;
+
+        }
+    
+    *{
+    margin: 0;
+    padding: 0;
+}.n1 ul li{
+    background-color: rgb(231, 146, 36);
+    border: 2px solid  rgb(231, 146, 36);
+    width: 220px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.n1 ul li a{
+    text-decoration: none;
+    color: rgb(221, 214, 214);
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    list-style: none;
+}
+.n1 ul li a:hover{
+    background-color: rgb(128, 58, 0);
+}
+
+
+       
+
+        .img {
+            transition: 10s;
+        }
+        .footer{
+    height: 200px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+.footerb{
+    height: 180px;
+    width: 300px;
+   
+    float: left;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+.footerb a{
+    text-decoration: none;
+    color: white;
+}p{
+    font-size: 22px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h1 style="font-size: 40px; color: rgb(248, 141, 2);">SHIVRANJANI</h1>
+            <p style="text-align: center; margin-top: 10px; font-size: 30px;">The Music Society of Ramanujan College</p>
+            <p>NAAC Grade A++ with CGPA 3.71</p>
+        </div>
+        <br>
+        <img style="padding-left: 50px; float: left; " src="/static/G20.png" alt="your browser does'nt support">
+        <h1 style="float: left; padding-left: 380px; color: rgb(248, 141, 2); padding-right: 350px;" >शिवRanjani</h1>
+        <img style=" padding-right: 30px; float: left;" src="/static/G20.png" alt="your browser does'nt support">
+
+
+        <div style="padding-left: 2px;" class="menu">
+            <nav class="n1">
+                <ul class="m1">
+            <li><a href="{% url 'Home' %}">HOME</a></li>
+            <li><a href="{% url 'login' %}">LOGIN</a></li>
+            <li><a href="{% url 'About' %}">ABOUT</a></li>
+            <li><a href="{% url 'Members' %}">MEMBERS</a></li>
+            <li><a href="{% url 'Mission' %}">MISSIONS</a></li>
+            <li><a href="{% url 'Achievement' %}">ACHIEVEMENTS</a></li>
+        </ul>
+        </nav>
+           
+        </div>
+    </header>
+    <div class="img">
+        <img style="height: 500px; width: 100%; padding: 3px;" src="" id="image">
+        <script type="text/javascript">
+            let image = document.getElementById('image');
+            let images = ['/static/shiv1.jpg', '/static/shiv7.jpg', '/static/shiv8.jpg', '/static/shiv3.jpg', '/static/shiv4.jpg', '/static/shiv5.jpg']
+            setInterval(function () {
+                let random = Math.floor(Math.random() * 5);
+                image.src = images[random];
+            }, 900);
+        </script>
+    </div>
+
+    <div>
+
+    </div><br><br><br>
+    <p style="padding: 20px;" >Shivranjani is the music society of Ramanujan College. Founded in 2013 by a group of
+        passionate music enthusiasts led by Mrs. Ishwanik Kaur, the society has grown to become one
+        of the most active and popular music societies in the Delhi University's Music Circuit.
+        The Goal of Shivranjani is to collectively make music, perform and excel individually,
+        increasing industry connect for those who wish to pursue music either as a hobby or further as
+        a career.
+
+        With a focus on preserving and promoting the rich cultural heritage of Indian classical music
+        and Western Music, Shivranjani provides a platform for students to learn and appreciate the
+        intricacies of this art form. Through regular music workshops, concerts, and performances, the
+        society aims to create a community of like-minded individuals who share a love for music.
+        From the very beginning, the Society has its involvement in almost every event of the College
+        like fresher parties, cultural fest, foundation day, annual day and farewells. The Society is
+        actively involved in various social events conducted by the College like outreach programs and
+        awareness programs.
+        Currently the society has 3 active musical groups lead by the core team i.e "The Indian Classical
+        Choir", "the Rock Band: Aurum", and "The Western choir", who participate in Intra as well as
+        Inter-College Events that take place and hence making it one of the most happening and
+        engaging Society in our college and the circuit.
+        The society conducts one of its annual flagship events “Khamaj” in the month of April which
+        involves various competitions and Performances based upon Indian Classical Music. Recently,
+        in the session 2022-23, Other Events that took place were “Open Stage”, “Gaane Bhi Do
+        Yaaro”, “Auditions”, “Orientation”, “Overdrive: The Battle of Bands”, and “Shivranjani’s
+        showcase” and “Khamaj”.
+        Shivranjani is one of the few societies to have won around 25 competitions in just a span of 3
+        months of the fest season. And the total number of competitions won, including the previous
+        year's count, remains 30+.  </p><br><br><br>
+        <div class="footer">
+            
+            <div class="footerb">
+                <b> Contact : </b> <br><br>
+                Ramanujan college, Kalkaji<br> 
+                Email : Shivranjani@gmail.com<br>
+                Mobile : 93165734540<br>
+                Time : 9.00 AM to 5.00 Pm <br>
+               
+            </div>
+            <div class="footerb" >
+                <b> Directions</b>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.025089248348!2d77.25249467387387!3d28.53896558832641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d9a24e2a8f%3A0x469bcb8c1b03b6f6!2sRamanujan%20College!5e0!3m2!1sen!2sin!4v1701796327241!5m2!1sen!2sin" width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <p>Social media:
+                    <a href="https://tr.ee/-3BrlPppG_"><span class="glyphicon glyphicon-envelope"></span></a>
+                  </p>
+                  <p>Listen this:
+                    <a href="https://open.spotify.com/track/2542xAtyumIMQu677ejjoG?si=S6u2svN9TvC4Pjk-xHCjvQ">
+                      <span class="glyphicon glyphicon-music"></span>
+                    </a>
+                  </p>
+                  <p>Track us:
+                    <a href="https://maps.app.goo.gl/oBcXVAXmKehoy2D49">
+                      <span class="glyphicon glyphicon-map-marker"></span>
+                    </a>
+                  </p>
+            </div>
+        </div>
+
+</body>
+
+</html>
